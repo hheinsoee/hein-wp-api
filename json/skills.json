@@ -1,0 +1,101 @@
+[
+    {
+        "label": "Languages",
+        "data": [
+            {
+                "label": "php",
+                "key": "php",
+                "percent": 70,
+                "color": "#848DB8"
+            },
+            {
+                "label": "mysql",
+                "key": "mysql",
+                "percent": 87,
+                "color": "#E56C01"
+            },
+            {
+                "label": "sass",
+                "key": "sass",
+                "percent": 45,
+                "color": "#F75C9B"
+            },
+            {
+                "label": "js",
+                "key": "js",
+                "percent": 80,
+                "color": "#E4D00F"
+            },
+            {
+                "label": "jsx",
+                "key": "jsx",
+                "percent": 75,
+                "color": "#61DBFB"
+            },
+            {
+                "label": "css",
+                "key": "css",
+                "percent": 95,
+                "color": "#2EA7D9"
+            },
+            {
+                "label": "html",
+                "key": "html",
+                "percent": 99,
+                "color": "#EF4211"
+            }
+        ]
+    },
+    {
+        "label": "Library / Framework",
+        "data": [
+            {
+                "label": "Laravel",
+                "key": "laravel",
+                "percent": 50,
+                "color": "#ED4F45"
+            },
+            {
+                "label": "ReactJs",
+                "key": "react",
+                "percent": 75,
+                "color":"#10C8ED"
+            },
+            {
+                "label": "Next.Js (Learning)",
+                "key": "next",
+                "percent": 1,
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "label": "Graphic Design Tools",
+        "data": [
+            {
+                "label": "Adobe Photoshop",
+                "key": "photoshop",
+                "percent": 90,
+                "color": "#0F75F4"
+            },
+            {
+                "label": "Adobe Illustrator",
+                "key": "illustrator",
+                "percent": 60,
+                "color": "#F78F00"
+            },
+            {
+                "label": "Adobe Premiere",
+                "key": "premiere",
+                "percent": 80,
+                "color": "#9494F7"
+            },
+            {
+                "label": "Adobe After Effects",
+                "key": "after_effects",
+                "percent": 20,
+                "color": "#E286F7"
+            }
+        ]
+    }
+]

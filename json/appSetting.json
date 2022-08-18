@@ -1,0 +1,31 @@
+{
+    "title": "a web developer",
+    "contact": {
+        "email": "hi@heinsoe.com",
+        "phone": "+959252152447"
+    },
+    "links": {
+        "gitbub": "https://github.com/hheinsoee",
+        "website": "https://www.heinsoe.com"
+    },
+    "materialTheme": {
+        "palette": {
+            "mode": "dark",
+            "primary": {
+                "main": "#00ffd5",
+                "alpha": "#254a4c77"
+            },
+            "secondary": {
+                "main": "#1e3536"
+            },
+            "background": {
+                "default": "#243637",
+                "paper": "#254a4c"
+            },
+            "text": {
+                "primary": "#ffffff"
+            }
+        }
+    },
+    "profile_photo": "https://api.heinsoe.com/v3/index.svg"
+}
