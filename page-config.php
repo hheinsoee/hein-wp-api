@@ -1,6 +1,6 @@
 <?php get_header();
-$appSetting = file_get_contents (get_template_directory_uri().'/json/appSetting.json');
-$skills = file_get_contents (get_template_directory_uri().'/json/skills.json');
+$appSetting = file_get_contents (__DIR__.'/json/appSetting.json');
+$skills = file_get_contents (__DIR__.'/json/skills.json');
 
 echo json_encode(
 	array_merge(
