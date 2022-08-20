@@ -232,10 +232,10 @@ function custom_columns($columns)
 {
     $columns = array(
         'cb' => '<input type="checkbox" />',
-        'featured_image' => 'Image',
         'title' => 'အမည်',
-        'description' => 'အကြောင်းအရာ',
-        'type' => 'အမျိုးအစား'
+        'languages' => 'languages',
+        'tags' => 'tags',
+        'featured_image' => 'Image'
     );
     return $columns;
 }
@@ -246,13 +246,13 @@ function custom_columns_data($column, $post_id)
 {
     switch ($column) {
         case 'featured_image':
-            the_post_thumbnail('tiny');
+            the_post_thumbnail('xs');
             break;
-        case 'type':
-            echo get_post_meta($post_id, 'portfolio', true)['type'];
+        case 'languages':
+            echo get_post_meta($post_id, 'portfolio', true)['languages'];
             break;
-        case 'description':
-            echo get_post_meta($post_id, 'portfolio', true)['description'];
+        case 'tags':
+            echo get_post_meta($post_id, 'portfolio', true)['tags'];
             break;
     }
 }
