@@ -4,7 +4,8 @@ $skills = file_get_contents(__DIR__ . '/json/skills.json');
 
 $args = array(
 	'post_type' => 'portfolio',
-	'order'    => 'ASC'
+	'order'    => 'DESC',
+	'posts_per_page'=>"4"
 );
 $recent_works = [];
 $the_query = new WP_Query($args);

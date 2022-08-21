@@ -61,7 +61,7 @@ function portfolio_post()
 
     $args = array(
         'label'               => __('portfolioများ', 'twentytwenty'),
-        'description'         => __('portfolio အချက်အလက်', 'twentytwenty'),
+        'description'         => __('', 'twentytwenty'),
         'labels'              => $labels,
         'public'              => true,
         'publicly_queryable'  => true,
