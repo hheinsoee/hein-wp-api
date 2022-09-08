@@ -56,6 +56,23 @@ function logo()
     return $image[0];
 }
 
+
+// jetpet config 
+function jetpackme_allow_my_post_types( $allowed_post_types ) {
+    $allowed_post_types[] = 'portfolio';
+ 
+    return $allowed_post_types;
+}
+add_filter( 'rest_api_allowed_post_types', 'jetpackme_allow_my_post_types' )
+
+function jpina_no_related_posts( $options ) {
+    if ( !is_singular( 'post' ) ) {
+        $options['enabled'] = false;
+    }
+    return $options;
+}
+add_filter( 'jetpack_relatedposts_filter_options', 'jpina_no_related_posts' );
+
 // important အမှားကာကွယ်ရန်
 function wpdocs_remove_menus()
 {
