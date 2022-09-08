@@ -58,12 +58,12 @@ function logo()
 
 
 // jetpet config 
-function jetpackme_allow_my_post_types( $allowed_post_types ) {
-    $allowed_post_types[] = 'portfolio';
+// function jetpackme_allow_my_post_types( $allowed_post_types ) {
+//     $allowed_post_types[] = 'portfolio';
  
-    return $allowed_post_types;
-}
-add_filter( 'rest_api_allowed_post_types', 'jetpackme_allow_my_post_types' )
+//     return $allowed_post_types;
+// }
+// add_filter( 'rest_api_allowed_post_types', 'jetpackme_allow_my_post_types' )
 
 function jpina_no_related_posts( $options ) {
     if ( !is_singular( 'post' ) ) {
