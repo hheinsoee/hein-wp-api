@@ -1,6 +1,7 @@
 <?php
 // include_once(__DIR__ . "/functions/metabox.php");
 include_once(__DIR__ . "/functions/portfolio.php");
+include_once(__DIR__ . "/functions/channel.php");
 
 remove_filter('the_content','wpautop');
 // function abc()
