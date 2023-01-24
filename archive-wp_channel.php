@@ -73,6 +73,7 @@ foreach ($terms as $term) {
     );
 }
 echo json_encode($theData);
+
 function getPostsByTerms($termsid){
     $query = new WP_Query(array(
         'post_type' => 'wp_channel',      // name of post type.   
@@ -84,7 +85,7 @@ function getPostsByTerms($termsid){
                 'terms' => $termsid,                  // term id, term slug or term name
             )
         )
-    )); 
+    ));
     while ($query->have_posts()) :
         $query->the_post();
         global $post;
@@ -96,7 +97,7 @@ function getPostsByTerms($termsid){
             $channel_meta,
             array(
                 "id" => get_the_id(),
-                "slug" => "fuck",
+                "slug" => get_post_field('post_name', get_the_id()),
                 "title" => get_the_title(),
                 "url" => esc_url(get_permalink()),
                 "excerpt" => html_entity_decode(get_the_excerpt(), ENT_QUOTES, 'UTF-8'),
