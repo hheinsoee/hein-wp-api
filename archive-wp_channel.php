@@ -95,7 +95,7 @@ function getPostsByTerms($termsid){
             $channel_meta,
             array(
                 "id" => get_the_id(),
-                "slug" => get_post_field('post_name', get_the_ID()),
+                "slug" => get_post_field('post_name', get_the_id()),
                 "title" => get_the_title(),
                 "url" => esc_url(get_permalink()),
                 "excerpt" => html_entity_decode(get_the_excerpt(), ENT_QUOTES, 'UTF-8'),
