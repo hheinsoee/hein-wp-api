@@ -61,7 +61,7 @@ if (isset($_GET['latest'])) {
 
 $terms = get_terms([
     'taxonomy' => 'channel_categories',
-    'hide_empty' => false,
+    'hide_empty' => true,
 ]);
 $theData = [];
 foreach ($terms as $term) {
@@ -95,7 +95,7 @@ function getPostsByTerms($termsid){
             $channel_meta,
             array(
                 "id" => get_the_id(),
-                "slug" => $post->post_name,
+                "slug" => get_post_field('post_name', get_the_ID()),
                 "title" => get_the_title(),
                 "url" => esc_url(get_permalink()),
                 "excerpt" => html_entity_decode(get_the_excerpt(), ENT_QUOTES, 'UTF-8'),
